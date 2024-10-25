@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow all paths
-                        .allowedOrigins("*") // Allow all origins (you can restrict this in production)
+                        .allowedOrigins("https://quiz-app2024.vercel.app", "http://localhost:5173") // Allow all origins (you can restrict this in production)
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(false);
